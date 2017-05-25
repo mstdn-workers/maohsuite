@@ -1,5 +1,16 @@
 # 現状
-開発中。まだソース出せる状況にないのでREADMEだけ置いてます。
+開発中。
+
+# 動かし方
+```
+git clone https://github.com/mstdn-workers/maohsuite.git
+cd maohsuite
+
+npm install
+npm install -g angular-cli
+ng serve
+# http://localhost:4200/ でアクセス可能
+```
 
 # Maohsuite
 
