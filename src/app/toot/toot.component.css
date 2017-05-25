@@ -1,0 +1,42 @@
+/* グリッド設定 */
+.toot_block {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 70px auto;
+  border: none;
+  /* background-color: beige; */
+}
+
+.toot_icon {
+  grid-row: 1/4;
+  grid-column: 1/2;
+}
+
+.toot_meta {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+.toot_content {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.toot_content P:first-child {
+  padding-top: 0;
+  margin-top: 0;
+}
+.toot_content P:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.toot_command {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+
+/** 個別の設定 */
+.toot_icon {
+  margin: auto;  /* アイコン上下左右寄せ */
+  margin-left: 0; /* 上下はいいけど、左寄せ */
+  margin: 3px 0 0 0; /* やっぱり左上に変更 */
+}

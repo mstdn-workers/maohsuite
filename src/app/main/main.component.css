@@ -1,0 +1,49 @@
+.grid-root {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(250,250,250);
+  display: grid;
+  grid-template-rows: auto 1fr 100px;
+  grid-template-columns: 180px 1fr;
+}
+.title {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.link {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+.userinfo {
+  grid-row: 3/4;
+  grid-column: 1/2;
+
+  border-top: 1px solid white;
+}
+
+/* grid */
+.log {
+  grid-row: 1/3;
+  grid-column: 2/3;
+
+  padding-left: 10px;
+  padding-top: 10px;
+  overflow-y: scroll;
+}
+
+.toot {
+  grid-row: 3/4;
+  grid-column: 2/3;
+
+  border-top: 1px solid black;
+  padding-left: 10px;
+}
+
+.leftPane {
+  color: white;
+  background-color: rgb(77, 57, 75);
+}
+.log {
+  color: #2C2D30;
+}
+

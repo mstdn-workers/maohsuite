@@ -1,0 +1,15 @@
+<div class="grid-root">
+  <div class="link leftPane">
+    <app-menu-pane></app-menu-pane>
+  </div>
+  <div class="userinfo leftPane">
+    <app-user-pane></app-user-pane>
+  </div>
+
+  <div class="log rightPane" data-name="log">
+    <app-toot-pane [token]="token" [url]="url"></app-toot-pane>
+  </div>
+  <div class="toot rightPane">
+    <input name="toot" value="まだトゥートできない" length="30" readonly />
+  </div>
+</div>

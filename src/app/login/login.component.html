@@ -1,0 +1,44 @@
+<div *ngIf="screen == 'start'">
+  <div>
+    ログイン先URL
+    <input type="text" [(ngModel)]="url" />
+  </div>
+
+  <div>
+    ログインボタンを押すと、Mastodonのログイン画面が開きます。<br />
+    ログイン後、謎の文字列が表示されるので、それをコピペして下さい。
+  </div>
+
+  <button (click)="login($event)">ログイン</button>
+
+</div>
+
+<div *ngIf="screen == 'authcode'">
+  <div>
+    認証コード
+    <input type="text" [(ngModel)]="authcode" />
+  </div>
+
+  <div>
+    ログイン後に表示された、謎の文字列をコピペしてログインボタンを押して下さい。
+  </div>
+
+  <button (click)="auth($event)">ログイン</button>
+
+  <br /><br /><br />
+  <button (click)="reset($event)">最初からやりなおす</button>
+
+
+</div>
+
+<div *ngIf="screen == 'done'">
+  <div>
+    認証に成功しました。
+  </div>
+
+  <div>
+    <a routerLink="/main">メイン画面へ</a>
+  </div>
+
+
+</div>
