@@ -11,6 +11,7 @@ import { UpperPipe } from './pipe/upper.pipe';
 
 import { MainComponent } from './main/main.component';
 import { LoginComponent } from './login/login.component';
+import { TootInputComponent } from './toot-input/toot-input.component';
 
 @NgModule({
   declarations: [

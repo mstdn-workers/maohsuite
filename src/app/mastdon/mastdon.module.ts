@@ -8,6 +8,7 @@ import { UserPaneComponent } from '../user-pane/user-pane.component';
 import { TootComponent } from '../toot/toot.component';
 import { MainComponent } from '../main/main.component';
 import {MastdonService} from "../main/mastdon.service";
+import {TootInputComponent} from "../toot-input/toot-input.component";
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import {MastdonService} from "../main/mastdon.service";
     UserPaneComponent,
     TootComponent,
     MainComponent,
+    TootInputComponent,
   ],
   providers: [
     WebSocketService,

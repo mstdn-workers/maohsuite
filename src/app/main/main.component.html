@@ -9,7 +9,9 @@
   <div class="log rightPane" data-name="log">
     <app-toot-pane [token]="token" [url]="url"></app-toot-pane>
   </div>
+
+
   <div class="toot rightPane">
-    <input name="toot" value="まだトゥートできない" length="30" readonly />
+    <app-toot-input [token]="token" [url]="url"></app-toot-input>
   </div>
 </div>

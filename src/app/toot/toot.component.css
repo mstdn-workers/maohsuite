@@ -2,7 +2,7 @@
 .toot_block {
   display: grid;
   grid-template-rows: auto auto auto;
-  grid-template-columns: 70px auto;
+  grid-template-columns: 35px auto;
   border: none;
   /* background-color: beige; */
 }
@@ -35,8 +35,16 @@
 }
 
 /** 個別の設定 */
+.toot_command {
+  display: none; /* オーバーレイにしたい */
+}
+
 .toot_icon {
   margin: auto;  /* アイコン上下左右寄せ */
   margin-left: 0; /* 上下はいいけど、左寄せ */
   margin: 3px 0 0 0; /* やっぱり左上に変更 */
+}
+
+.toot_meta {
+  font-weight: bolder;
 }
